@@ -1,0 +1,25 @@
+{
+  "model": "WaterSplatting (nerfstudio, no sonar supervision -- raw scattering-model geometry)",
+  "ns_config": "D:/watersplatting_output/ps117_39_vanilla_init/water-splatting/2026-08-27_164006/config.yml",
+  "step": 6999,
+  "config": "configs/ps117_39.yaml",
+  "n_frames_matched": 298,
+  "n_train": 260,
+  "n_test": 38,
+  "holdout_method": "watersplatting's own ColmapDataParser eval_mode=interval split (checkpoint was trained this way; not re-split to keep this an honest reflection of the delivered checkpoint)",
+  "result": {
+    "fitted_scale": 1.2326900751771956,
+    "scale_fit_source": "train_split_only",
+    "train": {
+      "n": 260,
+      "r": -0.8544850784213848,
+      "rmse": 1.2862247203176744
+    },
+    "test": {
+      "n": 38,
+      "r": -0.8593319155449226,
+      "rmse": 1.273973763202548
+    }
+  },
+  "generated_at": "2026-09-02T16:48:55.449335"
+}

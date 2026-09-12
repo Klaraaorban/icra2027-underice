@@ -1,0 +1,9 @@
+# Template for a single custom run. Copy and edit.
+name: my_experiment
+station: ps117_39          # or ps117_29
+iterations: 30000
+sonar_loss_weight: 0.1     # w
+sonar_adaptive_gain: 3.0   # k — set to 0.0 for fixed weight
+dropout_pct: 0             # 0, 25, 50, or 75
+pingrate_decimation: 1     # 1=full, 4=every4th (~1Hz), 20=every20th (~0.2Hz)
+notes: ""

@@ -1,0 +1,25 @@
+{
+  "model": "SeaSplat (no sonar supervision -- raw underwater-physics-model geometry)",
+  "model_path": "E:/Research/Holo/gaussian-splatting/data/ps117_39_30to90_fisheye/experiments/08272026/test",
+  "iteration": 7000,
+  "config": "../icra2027_underice/configs/ps117_39.yaml",
+  "n_frames_matched": 298,
+  "n_train": 260,
+  "n_test": 38,
+  "holdout_method": "seasplat's own eval=True split (checkpoint was trained this way; not re-split to keep this an honest reflection of the delivered checkpoint)",
+  "result": {
+    "fitted_scale": 0.18770748168163945,
+    "scale_fit_source": "train_split_only",
+    "train": {
+      "n": 260,
+      "r": -0.8646999405869218,
+      "rmse": 1.3535794443544518
+    },
+    "test": {
+      "n": 38,
+      "r": -0.8605109951414097,
+      "rmse": 1.3397544334774603
+    }
+  },
+  "generated_at": "2026-09-02T16:53:30.755801"
+}

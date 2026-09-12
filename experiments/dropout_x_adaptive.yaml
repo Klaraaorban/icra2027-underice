@@ -1,0 +1,16 @@
+# Dropout × adaptive/fixed: shows whether adaptive weighting earns its
+# complexity when pings drop out. This is the key test the paper needs
+# to justify the adaptive framing.
+# 8 runs (4 dropout levels × 2 k values), ~7-8h total. Run overnight.
+name: dropout_x_adaptive
+station: ps117_39
+iterations: 30000
+sonar_loss_weight: 0.1
+sonar_adaptive_gain:
+  - 0.0    # fixed weight
+  - 3.0    # adaptive
+dropout_pct:
+  - 0
+  - 25
+  - 50
+  - 75

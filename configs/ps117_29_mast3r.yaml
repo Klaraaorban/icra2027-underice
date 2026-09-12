@@ -1,0 +1,6 @@
+station: ps117_29
+valeport_path: "F:/AAS_4408_PS117_ROV_sample/PS117-29/valeport.dat"
+clip_start: "2019-01-03T19:38:28"
+fps: 25.0
+source_path: "E:/Research/Holo/gaussian-splatting/data/ps117_29_verified300_mast3r_seeded"
+index_to_orig_name: "E:/Research/Holo/gaussian-splatting/data/ps117_29_verified300_mast3r_seeded/index_to_orig_name.json"

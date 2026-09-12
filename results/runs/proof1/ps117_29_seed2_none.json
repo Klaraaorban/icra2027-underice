@@ -1,0 +1,12 @@
+{
+  "station": "ps117_29",
+  "seed": 2,
+  "condition": "none",
+  "model_path": "output/proof1/ps117_29_seed2_none",
+  "n_train_sonar_pings": 0,
+  "n_test_matched": 43,
+  "fitted_scale": null,
+  "test_r": null,
+  "test_rmse_m": null,
+  "note": "no scale fit possible (condition=none has zero train sonar pings) -- test_r/rmse intentionally null, not fabricated as 0 or skipped silently"
+}

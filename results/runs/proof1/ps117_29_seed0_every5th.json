@@ -1,0 +1,11 @@
+{
+  "station": "ps117_29",
+  "seed": 0,
+  "condition": "every5th",
+  "model_path": "output/proof1/ps117_29_seed0_every5th",
+  "n_train_sonar_pings": 35,
+  "n_test_matched": 43,
+  "fitted_scale": 4.48170623073325,
+  "test_r": -0.6046737693574041,
+  "test_rmse_m": 1.1594893045248604
+}

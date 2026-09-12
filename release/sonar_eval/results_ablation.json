@@ -1,0 +1,44 @@
+[
+  {
+    "label": "Ours (adaptive sonar, 30k)",
+    "test_r_mean": 0.9802710106260444,
+    "test_r_std": 0.013164326103795938,
+    "test_rmse_mean": 0.07490537406806624,
+    "test_rmse_std": 0.021648413141537176
+  },
+  {
+    "label": "Ours - fixed weight (no adaptive gain)",
+    "test_r_mean": 0.9844960069080964,
+    "test_r_std": 0.010508255878496384,
+    "test_rmse_mean": 0.06440109198039215,
+    "test_rmse_std": 0.021268372888601547
+  },
+  {
+    "label": "Ours - sonar off (DA3+texconf only)",
+    "test_r_mean": 0.39799384091482964,
+    "test_r_std": 0.6465890716881506,
+    "test_rmse_mean": 0.48712930149619754,
+    "test_rmse_std": 0.056897590461428844
+  },
+  {
+    "label": "SeaSplat 7k (original)",
+    "test_r_mean": -0.23394761051465673,
+    "test_r_std": 0.7710906945910916,
+    "test_rmse_mean": 1.4601002263777525,
+    "test_rmse_std": 0.39711603875425416
+  },
+  {
+    "label": "SeaSplat 30k (matched budget)",
+    "test_r_mean": -0.259167983830511,
+    "test_r_std": 0.8092337797585852,
+    "test_rmse_mean": 1.4512819010348217,
+    "test_rmse_std": 0.41773068645585265
+  },
+  {
+    "label": "WaterSplatting (original)",
+    "test_r_mean": -0.2457655272075791,
+    "test_r_std": 0.75361157173688,
+    "test_rmse_mean": 1.4157346037899057,
+    "test_rmse_std": 0.38648050089578
+  }
+]

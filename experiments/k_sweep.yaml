@@ -1,0 +1,13 @@
+# Adaptive gain (k) sweep — justifies or revises the k=3.0 default.
+# 6 runs, ~5-6h total. Run overnight.
+name: k_sweep
+station: ps117_39
+iterations: 30000
+sonar_loss_weight: 0.1
+sonar_adaptive_gain:
+  - 0.0    # fixed weight baseline
+  - 0.5
+  - 1.0
+  - 2.0
+  - 3.0    # current default
+  - 5.0

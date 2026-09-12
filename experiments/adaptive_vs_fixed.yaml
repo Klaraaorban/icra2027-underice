@@ -1,0 +1,10 @@
+# Adaptive weighting (k=3.0) vs fixed weight (k=0).
+# Resolves the \needswork in the paper: does adaptive help on clean data?
+# 2 runs, ~2h total.
+name: adaptive_vs_fixed
+station: ps117_39
+iterations: 30000
+sonar_loss_weight: 0.1
+sonar_adaptive_gain:
+  - 0.0    # fixed weight (mu=1 always)
+  - 3.0    # adaptive (current default)

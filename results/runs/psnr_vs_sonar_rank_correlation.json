@@ -1,0 +1,33 @@
+{
+  "ps117_39": {
+    "n_configs": 11,
+    "spearman_rho": 0.690909090909091,
+    "p_value": 0.018565033381595004,
+    "configs": [
+      "vanilla_colmap",
+      "da3_depthreg_uniform",
+      "mast3r_seeded",
+      "mast3r_seeded_depthreg",
+      "colmap_mast3r_fused",
+      "da3_texconf_gated_handtuned",
+      "da3_texconf_fixed_sonar_handtuned",
+      "da3_texconf_calibrated_sonar",
+      "da3_texconf_floored_sonar",
+      "selfdiag_sonar_7k",
+      "selfdiag_sonar_30k"
+    ]
+  },
+  "ps117_29": {
+    "n_configs": 6,
+    "spearman_rho": -0.8285714285714287,
+    "p_value": 0.04156268221574334,
+    "configs": [
+      "vanilla_colmap",
+      "da3_texconf_gated_colmap",
+      "mast3r_seeded_vanilla",
+      "mast3r_depthreg",
+      "mast3r_texconf_gated_7k",
+      "mast3r_texconf_gated_30k"
+    ]
+  }
+}

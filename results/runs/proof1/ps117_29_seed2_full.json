@@ -1,0 +1,11 @@
+{
+  "station": "ps117_29",
+  "seed": 2,
+  "condition": "full",
+  "model_path": "output/proof1/ps117_29_seed2_full",
+  "n_train_sonar_pings": 173,
+  "n_test_matched": 43,
+  "fitted_scale": 3.7374947409426773,
+  "test_r": -0.9132258000952347,
+  "test_rmse_m": 0.6524869418871156
+}

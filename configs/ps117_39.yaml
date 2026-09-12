@@ -1,0 +1,5 @@
+station: ps117_39
+valeport_path: "F:/AAS_4408_PS117_ROV_sample/PS117-39/valeport.dat"
+clip_start: "2019-01-10T12:43:48"
+fps: 25.0
+source_path: "E:/Research/Holo/gaussian-splatting/data/ps117_39_30to90_fisheye"

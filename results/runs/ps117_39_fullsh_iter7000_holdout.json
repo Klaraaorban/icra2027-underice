@@ -1,0 +1,107 @@
+{
+  "model_path": "output/ps117_39_densecheckpoint_30k",
+  "iteration": 7000,
+  "config": "E:\\Research\\Holo\\icra2027_underice\\configs\\ps117_39.yaml",
+  "n_frames_matched": 298,
+  "n_blocks": 5,
+  "holdout_method": "contiguous_block (Task 1 re-scoped for single-beam altimeter)",
+  "scale_fit_source": "train_block_only",
+  "per_seed": [
+    {
+      "fitted_scale": 5.237720388607276,
+      "scale_fit_source": "train_block_only",
+      "train": {
+        "n": 239,
+        "r": 0.9661235932790232,
+        "rmse": 0.18040576613962306
+      },
+      "test": {
+        "n": 59,
+        "r": 0.865202941842885,
+        "rmse": 0.19592748120480077
+      },
+      "seed": 0,
+      "test_block_idx": 0,
+      "n_blocks": 5,
+      "test_block_sonar_range_m": 0.9319999999999999
+    },
+    {
+      "fitted_scale": 5.268697275748353,
+      "scale_fit_source": "train_block_only",
+      "train": {
+        "n": 238,
+        "r": 0.97495978739176,
+        "rmse": 0.1648944588180085
+      },
+      "test": {
+        "n": 60,
+        "r": 0.9200658950974232,
+        "rmse": 0.2442544069007838
+      },
+      "seed": 1,
+      "test_block_idx": 1,
+      "n_blocks": 5,
+      "test_block_sonar_range_m": 1.361
+    },
+    {
+      "fitted_scale": 5.22883661413919,
+      "scale_fit_source": "train_block_only",
+      "train": {
+        "n": 239,
+        "r": 0.973801344070922,
+        "rmse": 0.18516832085951784
+      },
+      "test": {
+        "n": 59,
+        "r": 0.9408486110806256,
+        "rmse": 0.1774277654864926
+      },
+      "seed": 2,
+      "test_block_idx": 2,
+      "n_blocks": 5,
+      "test_block_sonar_range_m": 1.6329999999999998
+    },
+    {
+      "fitted_scale": 5.258262026042584,
+      "scale_fit_source": "train_block_only",
+      "train": {
+        "n": 238,
+        "r": 0.962061037160907,
+        "rmse": 0.1899643552553503
+      },
+      "test": {
+        "n": 60,
+        "r": 0.8901943515574342,
+        "rmse": 0.15563228549409241
+      },
+      "seed": 3,
+      "test_block_idx": 3,
+      "n_blocks": 5,
+      "test_block_sonar_range_m": 1.0499999999999998
+    },
+    {
+      "fitted_scale": 5.2537015805628196,
+      "scale_fit_source": "train_block_only",
+      "train": {
+        "n": 238,
+        "r": 0.9721812819957637,
+        "rmse": 0.19552253738736713
+      },
+      "test": {
+        "n": 60,
+        "r": 0.9164197096131219,
+        "rmse": 0.12526498297901598
+      },
+      "seed": 4,
+      "test_block_idx": 4,
+      "n_blocks": 5,
+      "test_block_sonar_range_m": 0.9970000000000001
+    }
+  ],
+  "test_r_mean": 0.9065463018382978,
+  "test_r_std": 0.02620523495805585,
+  "test_rmse_mean": 0.17970138441303712,
+  "test_rmse_std": 0.03994544178320775,
+  "full_sequence_sonar_range_m": 2.8489999999999998,
+  "generated_at": "2026-09-02T01:25:57.665996"
+}

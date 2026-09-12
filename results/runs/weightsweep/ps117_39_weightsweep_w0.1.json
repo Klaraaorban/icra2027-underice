@@ -1,0 +1,11 @@
+{
+  "station": "ps117_39",
+  "seed": 0,
+  "condition": "w0.1",
+  "model_path": "output/weightsweep/ps117_39_weightsweep_w0.1",
+  "n_train_sonar_pings": 239,
+  "n_test_matched": 59,
+  "fitted_scale": 5.186742541167219,
+  "test_r": -0.16179100407643077,
+  "test_rmse_m": 0.37499409729418903
+}

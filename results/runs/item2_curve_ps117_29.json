@@ -1,0 +1,82 @@
+[
+  {
+    "iteration": 1000,
+    "train_psnr_mean": 27.088852569347118,
+    "test_psnr_mean": 26.68607224916157,
+    "fitted_scale": 2.048424205271611,
+    "test_sonar_r": -0.17627887487230848,
+    "test_sonar_rmse_m": 1.3945624635223113
+  },
+  {
+    "iteration": 2000,
+    "train_psnr_mean": 28.40708892764026,
+    "test_psnr_mean": 27.395868627648603,
+    "fitted_scale": 2.4119079090617723,
+    "test_sonar_r": -0.23072547621844952,
+    "test_sonar_rmse_m": 1.5461632493581383
+  },
+  {
+    "iteration": 3000,
+    "train_psnr_mean": 29.190982243486943,
+    "test_psnr_mean": 27.775641642118757,
+    "fitted_scale": 2.4729963897229994,
+    "test_sonar_r": -0.20921464718803537,
+    "test_sonar_rmse_m": 1.8801885364824342
+  },
+  {
+    "iteration": 5000,
+    "train_psnr_mean": 30.581042071335187,
+    "test_psnr_mean": 29.240145884062116,
+    "fitted_scale": 2.8262729249702687,
+    "test_sonar_r": -0.27696248911146965,
+    "test_sonar_rmse_m": 1.5764761119499644
+  },
+  {
+    "iteration": 7000,
+    "train_psnr_mean": 31.129187496563862,
+    "test_psnr_mean": 29.822864783437627,
+    "fitted_scale": 2.8170312180039625,
+    "test_sonar_r": -0.2937734598497936,
+    "test_sonar_rmse_m": 1.4364550024878981
+  },
+  {
+    "iteration": 10000,
+    "train_psnr_mean": 31.957180845828457,
+    "test_psnr_mean": 30.365314483642578,
+    "fitted_scale": 2.8021214205479583,
+    "test_sonar_r": -0.26634131292132485,
+    "test_sonar_rmse_m": 1.4785171257431566
+  },
+  {
+    "iteration": 15000,
+    "train_psnr_mean": 32.81937750241229,
+    "test_psnr_mean": 31.018029062371504,
+    "fitted_scale": 2.7049011181232485,
+    "test_sonar_r": -0.264696108388771,
+    "test_sonar_rmse_m": 1.45256747863442
+  },
+  {
+    "iteration": 20000,
+    "train_psnr_mean": 33.445298187605296,
+    "test_psnr_mean": 31.249230334633275,
+    "fitted_scale": 2.6357811578375294,
+    "test_sonar_r": -0.26603159360462847,
+    "test_sonar_rmse_m": 1.4067770247077793
+  },
+  {
+    "iteration": 25000,
+    "train_psnr_mean": 33.98565383357856,
+    "test_psnr_mean": 31.764515826576634,
+    "fitted_scale": 2.5223045444633,
+    "test_sonar_r": -0.26462750320344003,
+    "test_sonar_rmse_m": 1.4051828418723038
+  },
+  {
+    "iteration": 30000,
+    "train_psnr_mean": 34.4020460325343,
+    "test_psnr_mean": 31.91605382216604,
+    "fitted_scale": 2.4560222373846465,
+    "test_sonar_r": -0.2626201580358211,
+    "test_sonar_rmse_m": 1.4075401087184782
+  }
+]

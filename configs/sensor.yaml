@@ -1,0 +1,57 @@
+# Sensor facts derived ONLY from raw dataset files (F:\AAS_4408_PS117_ROV_sample).
+# Any field not directly computable/readable from those files is UNKNOWN --
+# NOT filled from a manufacturer datasheet or the Katlein et al. 2017 paper,
+# per this task's explicit instruction. Where an earlier task (TASK0_VERDICT.md)
+# used the VA500P datasheet's beam angle to unblock a specific calculation, that
+# number is NOT repeated here as a "known" sensor fact -- it stays UNKNOWN in
+# this file, sourced separately and explicitly wherever it's actually used.
+
+instrument:
+  name_as_recorded: "valeport"  # exact string used in rov.log's instrument-startup log
+  nmea_talker: "$PRVAT"          # proprietary sentence ID, e.g. $PRVAT,-99999,M,0009.874,dBar*31
+  model_number: UNKNOWN          # no model string appears anywhere in the raw files
+  manufacturer_confirmed_in_raw_files: true   # "valeport" is an explicit instrument name in rov.log
+  beam_angle_deg: UNKNOWN        # not present in any raw file
+
+ping_rate:
+  ps117_39:
+    median_inter_ping_interval_s: 0.2554
+    implied_rate_hz: 3.916
+    n_total_log_lines: 19048
+    n_valid_ping_depth_readings: 16450
+  ps117_29:
+    median_inter_ping_interval_s: 0.2555
+    implied_rate_hz: 3.914
+    n_total_log_lines: 18128
+    n_valid_ping_depth_readings: 14667
+  source: "computed directly from consecutive timestamp fields in valeport.dat, both stations"
+
+range_resolution:
+  recorded_decimal_precision_m: 0.001   # e.g. "00.105" -- as WRITTEN in the log, 1mm digits
+  note: "this is the logged string precision, not a validated sensor accuracy spec -- no "
+        "accuracy/resolution number is stated anywhere in the raw files"
+
+camera_altimeter_extrinsics:
+  lever_arm: UNKNOWN
+  boresight_offset: UNKNOWN
+  note: "no rigid-mount offset, lever-arm, or extrinsics calibration file exists anywhere "
+        "in the raw dataset (checked rov.log, dship_summary.json, all .dat/.xml/.csv files). "
+        "All prior and current pipeline work assumes the camera's forward axis and the "
+        "altimeter boresight are co-aligned (both upward-looking, rigidly co-mounted per the "
+        "project brief's own physical description) -- this is a MODELLING ASSUMPTION, not a "
+        "measured extrinsic, and should be reported as such."
+
+per_sequence_mean_range:
+  ps117_39:
+    mean_range_m: 1.4983
+    min_range_m: 0.1
+    max_range_m: 2.949
+    n_matched_frames: 298
+  ps117_29:
+    mean_range_m: 1.5156
+    min_range_m: 0.116
+    max_range_m: 3.291
+    n_matched_frames: 216
+  source: "sonar_depths.json for each station's actual used frame window (t=30-90s for "
+          "ps117_39, t=930-990s for ps117_29) -- real matched altimeter readings, not the "
+          "full valeport.dat file's entire (much longer, different-context) range"

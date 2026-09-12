@@ -1,0 +1,17 @@
+{
+  "experiment_name": "ps117_39_vanilla_init",
+  "method_name": "water-splatting",
+  "checkpoint": "D:\\watersplatting_output\\ps117_39_vanilla_init\\water-splatting\\2026-08-27_164006\\nerfstudio_models\\step-000006999.ckpt",
+  "results": {
+    "psnr": 30.24211883544922,
+    "psnr_std": 2.844964027404785,
+    "ssim": 0.9262480735778809,
+    "ssim_std": 0.019112879410386086,
+    "lpips": 0.42270296812057495,
+    "lpips_std": 0.06334705650806427,
+    "num_rays_per_sec": 26799898.0,
+    "num_rays_per_sec_std": 4751517.0,
+    "fps": 10.555999755859375,
+    "fps_std": 1.8715373277664185
+  }
+}

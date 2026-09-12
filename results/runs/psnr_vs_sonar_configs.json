@@ -1,0 +1,24 @@
+{
+  "ps117_39": [
+    {"config": "vanilla_colmap", "psnr": 34.71, "sonar_r": 0.663},
+    {"config": "da3_depthreg_uniform", "psnr": 35.01, "sonar_r": 0.835},
+    {"config": "mast3r_seeded", "psnr": 29.36, "sonar_r": 0.462},
+    {"config": "mast3r_seeded_depthreg", "psnr": 28.03, "sonar_r": 0.476},
+    {"config": "colmap_mast3r_fused", "psnr": 33.77, "sonar_r": 0.676},
+    {"config": "da3_texconf_gated_handtuned", "psnr": 35.37, "sonar_r": 0.802},
+    {"config": "da3_texconf_fixed_sonar_handtuned", "psnr": 35.06, "sonar_r": 0.912},
+    {"config": "da3_texconf_calibrated_sonar", "psnr": 35.07, "sonar_r": 0.942},
+    {"config": "da3_texconf_floored_sonar", "psnr": 34.90, "sonar_r": 0.813},
+    {"config": "selfdiag_sonar_7k", "psnr": 33.86, "sonar_r": 0.948},
+    {"config": "selfdiag_sonar_30k", "psnr": 36.44, "sonar_r": 0.973}
+  ],
+  "ps117_29": [
+    {"config": "vanilla_colmap", "psnr": 38.12, "sonar_r": -0.530},
+    {"config": "da3_texconf_gated_colmap", "psnr": 38.10, "sonar_r": -0.771},
+    {"config": "mast3r_seeded_vanilla", "psnr": 30.99, "sonar_r": -0.306},
+    {"config": "mast3r_depthreg", "psnr": 30.11, "sonar_r": -0.140},
+    {"config": "mast3r_texconf_gated_7k", "psnr": 30.84, "sonar_r": -0.021},
+    {"config": "mast3r_texconf_gated_30k", "psnr": 31.71, "sonar_r": -0.146}
+  ],
+  "provenance": "Every (psnr, sonar_r) pair here is a previously-reported number from this project's own session logs/memory, one entry per distinct pipeline recipe (near-duplicate reruns of the identical config collapsed to one entry to avoid pseudoreplication -- e.g. mast3r_texconf_gated has two genuinely different iteration-count variants (7k, 30k) kept as separate entries, but not multiple same-config reseeds). sonar_r is the TEST-split (held-out) correlation wherever a train/test split was reported for that model, else the combined-set number for older pre-holdout-protocol entries -- flagged as a methodology caveat, not hidden, in PSNR_VS_SONAR_RANK_CORRELATION.md."
+}
