@@ -44,7 +44,7 @@ STATIONS = {
 # Paths (edit if your env differs)
 # ---------------------------------------------------------------------------
 GS_ROOT   = Path("E:/Research/Holo/gaussian-splatting")
-PY        = Path("/c/Users/orban/miniconda3/envs/gaussian_splatting/python.exe")
+PY        = Path("C:/Users/orban/miniconda3/envs/gaussian_splatting/python.exe")
 EVAL_PY   = Path("E:/Research/Holo/icra2027_underice/release/sonar_eval/eval_ours.py")
 RESULTS_DIR = Path("E:/Research/Holo/icra2027_underice/results")
 CSV_PATH  = RESULTS_DIR / "summary.csv"
