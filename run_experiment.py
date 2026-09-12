@@ -29,13 +29,14 @@ STATIONS = {
     "ps117_39": {
         "source_path": "data/ps117_39_30to90_fisheye",
         "sonar_scale": 5.2421,
-        "sonar_json_full": "data/ps117_39_30to90_fisheye/proof1_decimated/seed0_full_sonar_depths.json",
+        # sonar_depths.json = all 298 frames, full ping rate — used for standard CV training
+        "sonar_json_full": "data/ps117_39_30to90_fisheye/sonar_depths.json",
         "eval_config": "E:/Research/Holo/icra2027_underice/configs/ps117_39.yaml",
     },
     "ps117_29": {
         "source_path": "data/ps117_29_900to960_verified",
         "sonar_scale": 3.7511,
-        "sonar_json_full": "data/ps117_29_900to960_verified/proof1_decimated/seed0_full_sonar_depths.json",
+        "sonar_json_full": "data/ps117_29_900to960_verified/sonar_depths.json",
         "eval_config": "E:/Research/Holo/icra2027_underice/configs/ps117_29.yaml",
     },
 }
@@ -270,7 +271,7 @@ def run_one(spec: dict, dry_run: bool):
     t0 = time.time()
 
     # Train
-    if not out_model_dir.exists() or spec.get("retrain", False):
+    if not out_model_dir.exists() or spec.get("retrain", False) or spec.get("force", False):
         ok = train(spec, name, out_model_dir, dry_run)
         if not ok:
             return

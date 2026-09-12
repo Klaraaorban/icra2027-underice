@@ -5,6 +5,7 @@ name: adaptive_vs_fixed
 station: ps117_39
 iterations: 30000
 sonar_loss_weight: 0.1
+force: true   # re-run: earlier runs used wrong sonar JSON (proof1_decimated instead of full dataset)
 sonar_adaptive_gain:
   - 0.0    # fixed weight (mu=1 always)
   - 3.0    # adaptive (current default)
