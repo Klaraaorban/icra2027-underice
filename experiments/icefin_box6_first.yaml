@@ -1,0 +1,8 @@
+name: icefin_box6_first
+station: icefin_box6
+iterations: 30000
+sonar_loss_weight: 0.1
+sonar_adaptive_gain: 3.0
+dropout_pct: 0
+pingrate_decimation: 1
+notes: "First Icefin run — nadir-beam altimeter, 20 frames with 0.724m range, sonar_scale=1.0 (uncalibrated)"

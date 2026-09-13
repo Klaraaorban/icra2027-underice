@@ -1,0 +1,100 @@
+{
+  "model_path": "E:\\Research\\Holo\\gaussian-splatting\\output\\pipeline\\icefin_box2_first_icefin_box2_w0.1_k3.0_i30000",
+  "iteration": 30000,
+  "patch_size": 20,
+  "n_frames": 12,
+  "n_blocks": 5,
+  "ping_gap_s": {
+    "mean": 0.5,
+    "max": 0.879625,
+    "p95": 0.86025125
+  },
+  "per_block": [
+    {
+      "scale": 0.8176659239902847,
+      "train": {
+        "n": 10,
+        "r": -0.7673496202824797,
+        "rmse": 0.032594089628430044,
+        "rmse_unscaled": 0.08625439263356208
+      },
+      "test": {
+        "n": 2,
+        "r": null,
+        "rmse": null,
+        "rmse_unscaled": null
+      },
+      "block": 0
+    },
+    {
+      "scale": 0.8102650151955235,
+      "train": {
+        "n": 10,
+        "r": -0.7966203539944532,
+        "rmse": 0.02980196732614723,
+        "rmse_unscaled": 0.08905116289251114
+      },
+      "test": {
+        "n": 2,
+        "r": null,
+        "rmse": null,
+        "rmse_unscaled": null
+      },
+      "block": 1
+    },
+    {
+      "scale": 0.846135194549624,
+      "train": {
+        "n": 9,
+        "r": -0.7450377555517719,
+        "rmse": 0.027931164039386863,
+        "rmse_unscaled": 0.07102955685808307
+      },
+      "test": {
+        "n": 3,
+        "r": -6.996277848769228e-16,
+        "rmse": 0.04244320898475032,
+        "rmse_unscaled": 0.11092174362655019
+      },
+      "block": 2
+    },
+    {
+      "scale": 0.8330867333821441,
+      "train": {
+        "n": 10,
+        "r": -0.69129758251084,
+        "rmse": 0.026055817725055254,
+        "rmse_unscaled": 0.07645569141455526
+      },
+      "test": {
+        "n": 2,
+        "r": null,
+        "rmse": null,
+        "rmse_unscaled": null
+      },
+      "block": 3
+    },
+    {
+      "scale": 0.8119650909714219,
+      "train": {
+        "n": 9,
+        "r": -0.8204280454720905,
+        "rmse": 0.03326697320119276,
+        "rmse_unscaled": 0.08926235798877302
+      },
+      "test": {
+        "n": 3,
+        "r": NaN,
+        "rmse": 0.02277334944908005,
+        "rmse_unscaled": 0.05946361400363652
+      },
+      "block": 4
+    }
+  ],
+  "test_r_mean": NaN,
+  "test_r_std": NaN,
+  "test_rmse_mean": 0.032608279216915184,
+  "test_rmse_std": 0.009834929767835135,
+  "test_rmse_unscaled_mean": 0.08519267881509335,
+  "generated_at": "2026-09-12T23:35:58.798252"
+}

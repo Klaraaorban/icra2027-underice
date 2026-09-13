@@ -1,0 +1,7 @@
+station: scottreef25
+# ACFR AUV Sirius, Scott Reef (Western Australia), August 2009
+# Stereo camera, DVL altitude, 300 frames from 9831-frame survey
+# No video fps — images are AUV survey stereo pairs (~1 Hz)
+source_path: "E:/Research/Holo/gaussian-splatting/data/scottreef25_300"
+valeport_path: "E:/Research/Holo/gaussian-splatting/data/scottreef25_300/sonar_depths.json"
+sonar_format: "json_stem"

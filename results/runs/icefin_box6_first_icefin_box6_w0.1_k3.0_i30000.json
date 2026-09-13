@@ -1,0 +1,100 @@
+{
+  "model_path": "E:\\Research\\Holo\\gaussian-splatting\\output\\pipeline\\icefin_box6_first_icefin_box6_w0.1_k3.0_i30000",
+  "iteration": 30000,
+  "patch_size": 20,
+  "n_frames": 4,
+  "n_blocks": 5,
+  "ping_gap_s": {
+    "mean": 0.5,
+    "max": 0.960182,
+    "p95": 0.8971273999999998
+  },
+  "per_block": [
+    {
+      "scale": 1.5703164343644878,
+      "train": {
+        "n": 4,
+        "r": NaN,
+        "rmse": 0.035518778720830375,
+        "rmse_unscaled": 0.2649034397827544
+      },
+      "test": {
+        "n": 0,
+        "r": null,
+        "rmse": null,
+        "rmse_unscaled": null
+      },
+      "block": 0
+    },
+    {
+      "scale": 1.5728920459348665,
+      "train": {
+        "n": 3,
+        "r": NaN,
+        "rmse": 0.04094606066193741,
+        "rmse_unscaled": 0.26632699074182137
+      },
+      "test": {
+        "n": 1,
+        "r": null,
+        "rmse": null,
+        "rmse_unscaled": null
+      },
+      "block": 1
+    },
+    {
+      "scale": 1.5408282660838462,
+      "train": {
+        "n": 3,
+        "r": NaN,
+        "rmse": 0.028512766454016708,
+        "rmse_unscaled": 0.255407859017484
+      },
+      "test": {
+        "n": 1,
+        "r": null,
+        "rmse": null,
+        "rmse_unscaled": null
+      },
+      "block": 2
+    },
+    {
+      "scale": 1.5582106910819873,
+      "train": {
+        "n": 3,
+        "r": NaN,
+        "rmse": 0.039371210390082616,
+        "rmse_unscaled": 0.26184083138769987
+      },
+      "test": {
+        "n": 1,
+        "r": null,
+        "rmse": null,
+        "rmse_unscaled": null
+      },
+      "block": 3
+    },
+    {
+      "scale": 1.6128408146778215,
+      "train": {
+        "n": 3,
+        "r": NaN,
+        "rmse": 0.0204568124927761,
+        "rmse_unscaled": 0.2756292223398137
+      },
+      "test": {
+        "n": 1,
+        "r": null,
+        "rmse": null,
+        "rmse_unscaled": null
+      },
+      "block": 4
+    }
+  ],
+  "test_r_mean": null,
+  "test_r_std": null,
+  "test_rmse_mean": null,
+  "test_rmse_std": null,
+  "test_rmse_unscaled_mean": null,
+  "generated_at": "2026-09-13T01:02:18.119152"
+}

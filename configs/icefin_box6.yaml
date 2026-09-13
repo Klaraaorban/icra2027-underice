@@ -1,0 +1,9 @@
+station: icefin_box6
+# Icefin ROV, KIS2_ICE03_037, subglacial Antarctica
+# Box 6 camera (fisheye), first 3 minutes of box_6_1640800607 (17:56:47-17:59:47 UTC Dec 29 2021)
+# Sonar: ALT_LCM altimeter. NOTE: only 1 valid ice-ceiling ping (0.724m) in this 3-min window;
+# 658 other pings are floor/wall returns at 16-60m. Eval r will be degenerate.
+source_path: "E:/Research/Holo/gaussian-splatting/data/icefin_box6_first3min"
+valeport_path: "E:/Research/Holo/gaussian-splatting/data/icefin_box6_first3min/icefin_altimeter.jsonl"
+clip_start: "2021-12-29T17:56:47+00:00"
+fps: 30.0

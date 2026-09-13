@@ -67,6 +67,8 @@ def main():
     parser.add_argument("--patch-size", type=int, default=20,
                         help="Side length of the center patch used to sample depth (px). Default 20.")
     parser.add_argument("--out", required=True)
+    parser.add_argument("--save-pairs", default=None,
+                        help="If given, write per-frame (sonar, pred_depth) pairs as JSON to this path.")
     args = parser.parse_args()
 
     cfg = load_config(args.config)
@@ -123,6 +125,13 @@ def main():
         print("\nno valid blocks to summarise")
     Path(args.out).parent.mkdir(parents=True, exist_ok=True)
     Path(args.out).write_text(json.dumps(summary, indent=2))
+
+    if args.save_pairs:
+        pairs = [{"name": r["name"], "t_s": r["t_s"], "split": r["split"],
+                  "sonar_m": r["sonar"], "pred_depth": r["pred_depth"]} for r in rows]
+        Path(args.save_pairs).parent.mkdir(parents=True, exist_ok=True)
+        Path(args.save_pairs).write_text(json.dumps(pairs, indent=2))
+        print(f"Per-frame pairs saved to {args.save_pairs}")
 
 
 if __name__ == "__main__":

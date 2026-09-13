@@ -39,6 +39,32 @@ STATIONS = {
         "sonar_json_full": "data/ps117_29_900to960_verified/sonar_depths.json",
         "eval_config": "E:/Research/Holo/icra2027_underice/configs/ps117_29.yaml",
     },
+    "icefin_box6": {
+        "source_path": "data/icefin_box6_first3min",
+        # nadir beam of Norbit multibeam used as single-beam altimeter equivalent
+        # sonar_scale=1.0 placeholder — calibrate after first 3DGS run
+        "sonar_scale": 1.0,
+        "sonar_json_full": "data/icefin_box6_first3min/sonar_depths.json",
+        "eval_config": "E:/Research/Holo/icra2027_underice/configs/icefin_box6.yaml",
+        # no texture_confidence maps for Icefin — pass "" to train.py (disables confidence gating)
+        "texture_confidence": "",
+    },
+    "icefin_box2": {
+        "source_path": "data/icefin_box2_borehole",
+        # ALT_LCM ice ceiling returns: 3 pings at t+390-404s, ~0.36m, sonar_scale=1.0
+        "sonar_scale": 1.0,
+        "sonar_json_full": "data/icefin_box2_borehole/sonar_depths.json",
+        "eval_config": "E:/Research/Holo/icra2027_underice/configs/icefin_box2.yaml",
+        "texture_confidence": "",
+    },
+    "scottreef25": {
+        "source_path": "data/scottreef25_300",
+        # DVL bottom-track altitude (metres), already metric — sonar_scale=1.0 initial guess
+        "sonar_scale": 1.0,
+        "sonar_json_full": "data/scottreef25_300/sonar_depths.json",
+        "eval_config": "E:/Research/Holo/icra2027_underice/configs/scottreef25.yaml",
+        "texture_confidence": "",
+    },
 }
 
 # ---------------------------------------------------------------------------
@@ -170,7 +196,6 @@ def train(spec: dict, name: str, out_model_dir: Path, dry_run: bool) -> bool:
         "-m", str(out_model_dir),
         "--eval", "--data_device", "cpu",
         "--depths", "depths_da3",
-        "--texture_confidence", "texture_confidence_calibrated",
         "--sonar_depths_json", sonar_json,
         "--sonar_scale", str(station_cfg["sonar_scale"]),
         "--sonar_loss_weight", str(w),

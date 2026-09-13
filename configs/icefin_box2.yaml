@@ -1,0 +1,9 @@
+station: icefin_box2
+# Icefin ROV, KIS2_ICE03_037, subglacial Kamb Ice Stream, Antarctica
+# Box 2 camera (upward-facing), t=250-430s of box_2_1640800607 (18:00:57-18:04:17 UTC Dec 29 2021)
+# Scene: ice-shelf ceiling with borehole visible at t+300s
+# Sonar: ALT_LCM altimeter ice-ceiling returns — 3 pings at t+390-404s, dist=0.358-0.361m
+source_path: "E:/Research/Holo/gaussian-splatting/data/icefin_box2_borehole"
+valeport_path: "E:/Research/Holo/gaussian-splatting/data/icefin_box2_borehole/icefin_altimeter.jsonl"
+clip_start: "2021-12-29T17:56:47+00:00"
+fps: 30.0

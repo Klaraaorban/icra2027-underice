@@ -1,0 +1,9 @@
+name: scottreef25_sonar_w1
+station: scottreef25
+iterations: 30000
+sonar_loss_weight: 1.0
+sonar_adaptive_gain: 3.0
+dropout_pct: 0
+pingrate_decimation: 1
+sonar_json: "E:/Research/Holo/gaussian-splatting/data/scottreef25_300/sonar_depths.json"
+notes: "Scott Reef 25 (coral reef, Australia) sonar-supervised w=1.0 k=3.0, 300 frames, DVL altitude as sonar. Second dataset proving method generalises beyond Antarctic ice."

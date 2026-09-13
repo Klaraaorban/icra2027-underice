@@ -1,0 +1,8 @@
+name: icefin_box2_baseline
+station: icefin_box2
+iterations: 30000
+sonar_loss_weight: 0.0
+sonar_adaptive_gain: 0.0
+dropout_pct: 0
+pingrate_decimation: 1
+notes: "Box2 no-sonar baseline — w=0, no supervision, compare RMSE vs sonar-supervised run"
